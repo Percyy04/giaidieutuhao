@@ -2,7 +2,7 @@ const app = require('./src/app');
 const { testConnection } = require('./src/config/db');
 const config = require('./src/config/config');
 
-const PORT = config.port;
+const PORT = process.env.PORT || config.port || 3000;
 
 // Khởi động server
 (async () => {
@@ -10,7 +10,7 @@ const PORT = config.port;
         // Test kết nối DB trước
         await testConnection();
         // Start server
-        app.listen(PORT, () => {
+        app.listen(PORT, '0.0.0.0', () => {
             console.log(`🚀 Server đang chạy tại http://localhost:${PORT}`);
             console.log(`📝 Môi trường: ${config.nodeEnv}`);
         });

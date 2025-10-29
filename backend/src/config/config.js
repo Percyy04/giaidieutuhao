@@ -12,10 +12,10 @@ module.exports = {
   port: process.env.PORT || 3000,
   nodeEnv: process.env.NODE_ENV || 'development',
   db: {
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
+    host: process.env.DB_HOST|| 'project-db.cx06mg4wyw2q.ap-southeast-2.rds.amazonaws.com',
+    user: process.env.DB_USER || 'admin',
+    password: process.env.DB_PASSWORD || 'adminswd392***',
+    database: process.env.DB_NAME || 'giai_dieu_tu_hao_v2',
     port: process.env.DB_PORT || 3306,
   }
 };

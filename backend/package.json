@@ -1,11 +1,11 @@
 {
   "name": "gdth",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "sever.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node sever.js",
     "build": "echo 'Không cần build, chỉ cần chạy server!'",
-    "dev": "nodemon server.js",
+    "dev": "nodemon sever.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
